@@ -1,0 +1,24 @@
+//
+// Solucion al problema Cuadrado
+// http://www.titancod.net/problema/CUADRADO
+//
+
+#include <iostream>
+#include <cstdlib>
+#include <cstdio>
+
+using namespace std;
+
+int main()
+{
+    long a,b,c,d,m,n;
+    while (scanf("%ld %ld %ld %ld",&a,&b,&c,&d) == 4){
+      m=(a+b+c+d)/4;
+      n=abs(m-a);
+      n+=abs(m-b);
+      n+=abs(m-c);
+      n+=abs(m-d);
+      cout << n << endl;
+    }
+    return 0;
+}
